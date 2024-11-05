@@ -112,6 +112,14 @@ else{
 
 ===================
 
+while($tab=mysqli_fetch_array($zapytanie))
+{
+echo "<ul>";
+echo "<li>".$tab['Nazwisko']." ".$tab['Imie']."</li>";
+echo "</ul>";
+}
+mysqli_close($do_bazy);
+?>
 
 
 
