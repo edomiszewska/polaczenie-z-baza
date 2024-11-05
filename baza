@@ -5,3 +5,57 @@ create table klienci(
                     imie varchar(30),
                     nazwisko varchar(30),
                     miejscowosc varchar(30));
+
+insert into klienci
+
+(ID_Klienta,Imie,Nazwisko,Miejscowosc) values
+
+(266,"Paulina","Kachniarz","Bielawa"),
+
+(643,"Marcin","Jurczak","Jelenia Gora"),
+
+(228,"Marcin","Juralewicz","Olesnica"),
+
+(343,"Maja","Jenda","Wroclaw"),
+
+(440,"Karolina","Jarosiewicz","Sobotka"),
+
+(505,"Paulina","Januszewska","Sobotka"),
+
+(527,"Maja","Janukowicz","Sobotka"),
+
+(388,"Marek","Jakubowski","Wroclaw"),
+
+(377,"Damian","Kukulski","Walbrzych"),
+
+(542,"Anna","Krzywiec","Wroclaw"),
+
+(513,"Maja","Kruz","Walbrzych"),
+
+(270,"Mateusz","Krupa","Wroclaw"),
+
+(700,"Mateusz","Kruk","Sobotka"),
+
+(676,"Mateusz","Król","Wroclaw"),
+
+(352,"Joanna","Zebala","Walbrzych"),
+
+(296,"Karolina","Zbieska","Sobotka"),
+
+(455,"Malgorzata","Warda","Olesnica"),
+
+(250,"Anna","Srokowska","Wolow"),
+
+(500,"Mateusz","Smal","Sobotka"),
+
+(645,"Dorota","Sikora","Trzebnica"),
+
+(332,"Ewa","Rautenberg","Wroclaw"),
+
+(408,"Mateusz","Podrazka","Sobotka"),
+
+(275,"Paweł","Pilewski","Wroclaw"),
+
+(644,"Malgorzta","Ordecka","Olesnica"),
+
+(585,"Marek","Kozinski","Bielawa");
