@@ -143,7 +143,7 @@ mysqli_close($do_bazy);
 
 ===================
 <?php
-$do_bay=mysqli_connect('localhost','root','','klienci');
+$do_bazy=mysqli_connect('localhost','root','','klienci');
 if(!$do_bazy)
 {
 exit ("Blad polczenia z serwerm mysql");
