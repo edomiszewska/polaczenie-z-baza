@@ -124,5 +124,37 @@ mysqli_close($do_bazy);
 
 ===================
 
+<?php
+$do_bay=mysqli_connect('localhost','root','','klienci');
+if(!$do_bazy)
+{
+exit ("Blad polczenia z serwerm mysql");
+}
+$dodaj=mysqli_query($do_bazy,"insert into klienci values (12,'Anna','Lisek','Wadowice')");
+if(!$dodaj)
+{
+mysqli_close($do_bazy);
+exit ("Blad w zapytaniu<br>");
+}
+$ile=mysqli_affected_rows($do_bazy);
+echo "Liczba rekordow dodanych do tabeli wynosi:",$ile,"<br>";
+mysqli_close($do_bazy);
+?>
 
-
+===================
+<?php
+$do_bay=mysqli_connect('localhost','root','','klienci');
+if(!$do_bazy)
+{
+exit ("Blad polczenia z serwerm mysql");
+}
+$dodaj=mysqli_query($do_bazy,"insert into klienci values (12,'Anna','Lisek','Wadowice')");
+if(!$dodaj)
+{
+mysqli_close($do_bazy);
+exit ("Blad w zapytaniu<br>");
+}
+$ile=mysqli_affected_rows($do_bazy);
+echo "Liczba rekordow dodanych do tabeli wynosi:",$ile,"<br>";
+mysqli_close($do_bazy);
+?>
