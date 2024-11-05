@@ -43,6 +43,76 @@ mysqli_close($do_bazy);
 ===================
 
 
+$wynik=mysqli_query($do_bazy,'select * from klienci'); -zapytanie do bazy danych
+
+===================
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odczyt</title>
+</head>
+<body>
+<?php
+$do_bazy=mysqli_connect('localhost','root','','klienci');
+if(!$do_bazy){
+    echo "blad polczenia z serwerem mysql";
+    ?>
+
+</body>
+</html>
+<?php
+exit;
+}
+else{
+    $zapytanie=mysqli_query($do_bazy,'select * from klienci');
+    if(!$zapytanie){
+        mysqli_close();
+        echo "blad w zapytaniu <br>";
+        ?>
+        </body>
+        </html>
+        <?php
+        exit;
+    }
+    else
+    {
+        ?>
+        <table >
+        <tr>
+        <td>Nr klienta</td>
+        <td>Imie</td>
+        <td>Miejscowosc</td>   
+    </tr>
+    <?php
+        while($wiersze=mysqli_fetch_row($zapytanie))
+        {
+            echo "<tr>";
+            echo "<td>$wiersze[0]</td>";
+            echo "<td>$wiersze[1]</td>";
+            echo "<td>$wiersze[2]</td>";
+            echo "<td>$wiersze[3]</td>";
+
+            echo "</tr>";
+        }
+        ?>
+        </table>
+        <?php
+        mysqli_close($do_bazy);
+    }
+}
+
+
+?>
+
+</body>
+</html>
+
+
+
+
 
 
 
