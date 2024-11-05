@@ -1,0 +1,7 @@
+KLIENCI
+
+create table klienci(
+    				id_klienta int AUTO_INCREMENT PRIMARY key,
+                    imie varchar(30),
+                    nazwisko varchar(30),
+                    miejscowosc varchar(30));
